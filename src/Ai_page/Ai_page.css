@@ -1,0 +1,15 @@
+
+
+
+
+.ai_conatiner {
+    width: 100%;
+    height: auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+

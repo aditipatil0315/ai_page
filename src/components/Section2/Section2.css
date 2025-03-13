@@ -1,0 +1,61 @@
+
+
+.scale_section {
+    width: 100%;
+    height: 90vh;
+    background-color: #1B1B1B;
+    padding: 50px 90px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 30px;
+    /* text-align: left; */
+}
+
+.scale_section h1 {
+    line-height: 1;
+    font-size: 36px;
+    font-size: 700;
+    color: whitesmoke;
+
+}
+
+.scale_section h3 {
+    line-height: 1;
+    font-size: 16px;
+    font-weight: 400;
+    color: whitesmoke;
+
+}
+
+.applications_card {
+    width: 100%;
+    text-align: left;
+    color: whitesmoke;
+}
+
+.services_box {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    color: white;
+    gap: 20px;
+    text-align: left;
+
+}
+
+.services_given {
+    background-color: #2E2E2E;
+    display: flex;
+    height: 150px;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.services_given i {
+    font-size: 25px;
+
+}
