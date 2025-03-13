@@ -79,3 +79,119 @@
   .about p {
     padding: 10px;
   }
+
+
+  @media (max-width: 1024px) {
+    .our_team_section {
+        padding: 30px;
+    }
+
+    .member {
+        flex-direction: column;
+        height: auto;
+        padding: 50px 30px;
+        text-align: center;
+    }
+
+    .profile {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .intro {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .our_team_section {
+        padding: 20px;
+    }
+
+    .member {
+        padding: 40px 20px;
+    }
+
+    .profile {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .img_person {
+        height: 80px;
+        width: 80px;
+    }
+
+    .intro h2 {
+      text-align: center;
+
+        font-size: 18px;
+    }
+
+    .about {
+      text-align: center;
+        padding: 15px;
+    }
+
+    .about p {
+      text-align: center;
+
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .our_team_section {
+        padding: 15px;
+    }
+
+    .member {
+        padding: 30px 15px;
+    }
+
+    .img_person {
+        height: 70px;
+        width: 70px;
+    }
+
+    .intro h2 {
+      text-align: center;
+padding: 0;
+margin: 0;
+        font-size: 16px;
+    }
+
+    .intro p {
+      text-align: center;
+
+        font-size: 14px;
+    }
+
+    .about {
+      text-align: center;
+
+        padding: 10px;
+    }
+
+    .about p {
+        font-size: 12px;
+    }
+
+    .profile {
+      background-color: red;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+}
