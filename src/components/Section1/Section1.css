@@ -1,12 +1,30 @@
 
 
-.heading_tagline{
+.section1{
+    background-color: black;
+    color: whitesmoke;
+    position: relative;
+    padding: 50px 70px; /* Added some top & bottom padding */
+    z-index: 10;
+    width: 100%;
+    min-height: auto; /* Allows height to adjust dynamically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
 
+
+.heading_tagline{
+    background-color: black;
+    color: whitesmoke;
     position: relative;
     padding: 0 70px ;
     z-index: 10;
     width: 100%;
-    height: 80vh;
+    min-height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,8 +35,9 @@
 
 
 .heading_tagline h1  {
-    font-size: 48px;
-    color: whitesmoke;
+    font-size: 3rem; /* 48px converted to rem */
+    line-height: 1.3;
+    max-width: 90%; /* Ensuring it doesn't overflow */
 }
 
 
@@ -43,3 +62,127 @@
     transition: 0.3s ease-in-out;
     text-align: center;
 }
+
+
+.clients-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    display: flex;
+    /* flex-direction: column; */
+  }
+
+  .clients-section {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .clients-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .client-logo {
+    padding: 10px;
+  }
+
+  .client-logo img {
+    max-height: 50px;
+  }
+
+
+  @media (max-width: 1024px) {
+    .heading_tagline h1 {
+        font-size: 2.5rem;
+    }
+
+    .heading_tagline h3 {
+        font-size: 1rem;
+    }
+}
+
+ 
+
+
+  @media (max-width: 768px) {
+    .section1 {
+        padding: 0 30px;
+        min-height: auto; /* Allow height to adjust dynamically */
+    }
+
+    .heading_tagline {
+        padding: 0 20px;
+        gap: 15px;
+    }
+
+    .heading_tagline h1 {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    .heading_tagline h3 {
+        font-size: 16px;
+    }
+
+    .cta_ai {
+        width: 120px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .clients-section h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .clients-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        justify-items: center;
+    }
+
+    .client-logo img {
+        max-height: 40px;
+    }
+}
+
+
+ 
+@media (max-width: 480px) {
+    
+  
+    .section1 {
+        padding: 0 15px;
+        min-height: auto; /* Ensuring content is not squeezed */
+    }
+
+    .heading_tagline {
+        padding: 0 15px;
+        gap: 10px;
+    }
+
+    .heading_tagline h1 {
+        font-size: 22px;
+        line-height: 1.2;
+    }
+
+    .heading_tagline h3 {
+        font-size: 14px;
+    }
+
+    .cta_ai {
+        width: 100px;
+        height: 36px;
+        font-size: 12px;
+    }
+
+    .clients-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      align-items: center;
+      justify-items: center;
+    }
+  
+    
+  }
+  

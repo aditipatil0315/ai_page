@@ -13,3 +13,15 @@
     overflow-x: hidden;
 }
 
+
+@media (max-width: 768px) {
+    .ai_container {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ai_container {
+        padding: 0 10px;
+    }
+}

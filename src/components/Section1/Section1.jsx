@@ -12,6 +12,9 @@ const Section1 = () => {
   
 
   return (
+    <div className="section1">
+
+    
     <div className="heading_tagline">
     <h1>Empowering Autonomous Growth <br /> with Time-Tested AI Services and Solutions</h1>
     <h3>
@@ -20,7 +23,7 @@ const Section1 = () => {
     </h3>
     <button className='cta_ai'>AI CTA</button>
 
-    <div className="clients_showcase">
+    <div className="clients-section">
   <h2>Trusted by</h2>
   <div className="clients-grid">
     {clients.map((logo, index) => (
@@ -30,6 +33,7 @@ const Section1 = () => {
     ))}
   </div>
 </div>
+  </div>
   </div>
   )
 }
