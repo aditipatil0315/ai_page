@@ -1,142 +1,250 @@
+/* General Fixes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-
-/* case study sliding section  */
+body {
+  overflow-x: hidden;
+}
 
 .case_study_section {
-    width: 80%;
-    margin: auto;
-    height: 90vh;
-    background-color: black;
-    color: whitesmoke;
-    text-align: center;
-    padding: 50px 0px ;
+  width: 100%;
+  max-width: 100vw;
+  margin: auto;
+  height: auto;
+  background-color: black;
+  color: whitesmoke;
+  text-align: center;
+  padding: 50px 20px; /* Adjusted padding */
+}
 
-  }
-  
-  /* Upper Case Study Section */
-  .upper_case_study {
-    margin-bottom: 20px;
-  }
-  
-  .upper_case_study h2 {
-    font-size: 2rem;
-    font-weight: bold;
-  }
-  
-  .upper_case_study p {
-    font-size: 1.2rem;
-    color: #666;
-  }
-  
-  /* Bottom Case Study Section */
-  .bottom_case_study {
-    position: relative;
-    overflow: hidden;
-    width: 80%;
-    background-color: black;
-    color: whitesmoke;
-    height: 80%;
-    margin: auto;
-    z-index: 100;
-  }
-  
-  /* .case_study_wrapper {
-    display: flex;
-    width: 100%;
-    transition: transform 0.5s ease-in-out;
-  } */
-  
-  .case_study {
-    display: flex;
-    width: 100%;
-  }
-  
-  .case_study_item {
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    min-width: 100%;
-    height: 62vh;
-    background-color: black;
-    color: whitesmoke;    
-    /* padding: 20px; */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
+/* Upper Case Study Section */
+.upper_case_study {
+  margin-bottom: 20px;
+}
 
-  .statement {
-    font-size: 1.5rem;
-    font-weight: 600;
-    width: 100%;
-    height: 20%;
-    background-color: black;
-    color: whitesmoke;
-        display: flex;
-    justify-content: center;
-    align-items: center;
+.upper_case_study h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
 
+.upper_case_study p {
+  font-size: 1.2rem;
+  color: #b0b0b0;
+}
+
+/* Bottom Case Study Section */
+.bottom_case_study {
+  position: relative;
+  overflow: hidden;
+  width: 90%;
+  background-color: black;
+  color: whitesmoke;
+  height: auto;
+  margin: auto;
+  z-index: 100;
+}
+
+.case_study {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.case_study_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  background-color: black;
+  color: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Statement */
+.statement {
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 100%;
+  padding: 15px;
+  background-color: black;
+  color: whitesmoke;
+  text-align: center;
+}
+
+/* Problem, Solution, and Results */
+.content_study {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.problem, .solution, .results {
+  width: 33%;
+  background-color: #111111;
+  color: whitesmoke;
+  padding: 15px; /* Added padding */
+  border-radius: 10px;
+  text-align: left;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: whitesmoke;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
+  color: whitesmoke;
+  margin-bottom: 10px;
+}
+
+/* Arrows */
+.arrow_ai {
+  position: absolute;
+  top: 70%;
+  transform: translateY(-50%);
+  background-color: black;
+  color: whitesmoke;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid grey;
+  border-radius: 50%;
+  z-index: 100;
+}
+
+.arrow_ai.btn_left {
+  left: 0px;
+}
+
+.arrow_ai.btn_right {
+  right: 0;
+}
+
+.arrow_ai:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .case_study_section {
+    padding: 30px 10px;
   }
 
   .content_study {
-    width: 100%;
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 10px;
+    padding: 15px;
   }
-  
-  .problem, .solution, .results {
-    width: 40%;
-    height: 100%;
-    margin: 5px;
-    background-color: #111111;
-    color: whitesmoke;
-    }
-  
-  h3 {
-    
-    font-size: 1.5rem;
-    color: whitesmoke;
-    margin: 1rem 0;
-  }
-  
-  p {
-    font-size: 1rem;
-    color: whitesmoke;
-    margin: 1rem 0;
 
+  .problem, .solution, .results {
+    padding: 10px;
   }
-  
-  /* Arrows */
+}
+
+@media (max-width: 768px) {
+  .case_study_section {
+    padding: 20px;
+  }
+
+  .upper_case_study h2 {
+    font-size: 1.8rem;
+  }
+
+  .upper_case_study p {
+    font-size: 1rem;
+  }
+
+  .bottom_case_study {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .case_study_item {
+    padding: 15px;
+  }
+
+  .content_study {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .problem, .solution, .results {
+    width: 100%;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
   .arrow_ai {
-    position: absolute;
-    top: 92%;
-    transform: translateY(-50%);
-    background-color: black;
-    color: whitesmoke;
-    border: none;
-    cursor: pointer;
-    font-size: 1.5rem;
-    height: 45px;
-    width: 45px;
-    border: 1px solid grey;
-    border-radius: 5%;
-    z-index: 100;
+    top: auto;
+    bottom: 10px;
+    font-size: 1.3rem;
+    height: 40px;
+    width: 40px;
   }
-  
-  .arrow_ai.btn_left {
-    position: absolute;
-    left: 20px;
+}
+
+@media (max-width: 480px) {
+  .upper_case_study h2 {
+    font-size: 1.6rem;
   }
-  
-  .arrow_ai.btn_right {
-    position: absolute;
-    right: 20px;
+
+  .upper_case_study p {
+    font-size: 0.9rem;
   }
-  
-  .arrow_ai:hover {
-    background: rgba(0, 0, 0, 0.8);
+
+  .case_study_section {
+    padding: 15px;
   }
-  
+
+  .case_study_item {
+    padding: 10px;
+  }
+
+  .statement {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  .content_study {
+    padding: 10px;
+  }
+
+  .problem, .solution, .results {
+    padding: 8px;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .arrow_ai {
+    font-size: 1.2rem;
+    height: 35px;
+    width: 35px;
+  }
+}

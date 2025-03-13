@@ -26,7 +26,7 @@ const Ai_page = () => {
         <Section3/>
         <Section4/>
         <Section5/>
-        {/* <Case_study/> */}
+        <Case_study/>
         <Section6/>
 
 
