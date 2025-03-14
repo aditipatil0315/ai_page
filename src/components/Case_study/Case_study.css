@@ -242,6 +242,11 @@ p {
     font-size: 1rem;
   }
 
+  .upper_case_study h3 {
+    text-align: left;
+  }
+
+
   p {
     font-size: 0.8rem;
     text-align: left;
@@ -249,9 +254,9 @@ p {
 
   .arrow_ai {
     top: 30%;
-    font-size: 1rem;
-    height: 35px;
-    width: 35px;
+    font-size: 0.9rem;
+    height: 40px;
+    width: 40px;
   }
 
   .arrow_ai.btn_left {

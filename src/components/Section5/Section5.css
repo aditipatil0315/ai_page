@@ -1,4 +1,3 @@
-/* ai cards section from below  */
 .ai_cards {
   text-align: center;
   width: 100%;
@@ -6,27 +5,29 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px 90px;
+  padding: 50px 20px; /* Reduce padding for smaller screens */
   background-color: #0d0d0d;
   color: white;
+  box-sizing: border-box; /* Ensure padding doesn't overflow the width */
 }
 
 .ai_cards h1 {
   font-size: 28px;
   font-weight: bold;
   color: white;
+  margin-bottom: 20px;
 }
 
 .ai_cards p {
   font-size: 16px;
   margin: 15px auto;
-  width: 70%;
+  width: 90%; /* Make paragraph width more flexible */
   color: #ccc;
 }
 
 .grid-container {
   display: grid;
-  width: 90%;
+  width: 100%; /* Make sure it takes full width */
   justify-content: center;
   align-items: center;
   grid-template-columns: repeat(4, 1fr);
@@ -59,25 +60,39 @@
   color: white;
 }
 
-/* Media Queries for responsiveness */
 
-/* Tablet screens */
+
+
 @media (max-width: 1024px) {
   .grid-container {
     grid-template-columns: repeat(3, 1fr); /* 3 cards per row on tablets */
   }
 }
 
-/* Mobile screens */
+
 @media (max-width: 768px) {
   .grid-container {
     grid-template-columns: repeat(2, 1fr); /* 2 cards per row on mobile */
   }
 }
 
-/* Extra Small Mobile screens */
+
 @media (max-width: 480px) {
   .grid-container {
-    grid-template-columns: 1fr; /* 1 card per row on very small mobile screens */
+    grid-template-columns: 1fr;
+  }
+
+  .ai_cards {
+    padding: 20px; 
+  }
+
+  .ai_cards h1 {
+    font-size: 22px;
+    text-align: left; 
+  }
+
+  .ai_cards p {
+    font-size: 14px;
+    width: 100%; 
   }
 }
