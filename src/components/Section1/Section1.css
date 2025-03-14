@@ -100,7 +100,7 @@
 
   @media (max-width: 768px) {
     .section1 {
-        padding: 0 30px;
+        padding: 30px ;
         min-height: auto; /* Allow height to adjust dynamically */
     }
 
@@ -147,16 +147,19 @@
     
   
     .section1 {
-        padding: 0 15px;
+        background-color: black;
+        padding: 30px 0;
         min-height: auto; 
     }
 
     .heading_tagline {
-        padding: 0 15px;
+        text-align: left;
+        /* padding: 0 15px; */
         gap: 10px;
     }
 
     .heading_tagline h1 {
+width: 100%;
         font-size: 22px;
         line-height: 1.2;
     }
