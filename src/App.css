@@ -9,7 +9,7 @@
 }
 
 html , body {
-  /* background-color: black; */
+  background-color: black;
   scroll-behavior: smooth;
   width: 100%;
   font-family: Montserrat;
@@ -20,7 +20,7 @@ html , body {
   width: 100%;
   height: auto;
   display: flex;
-    flex-direction: column;
+  flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -29,6 +29,7 @@ html , body {
 @media (max-width: 768px) {
   .app {
       padding: 0 15px;
+      
   }
 }
 

@@ -1,62 +1,83 @@
+/* ai cards section from below  */
+.ai_cards {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 90px;
+  background-color: #0d0d0d;
+  color: white;
+}
 
+.ai_cards h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+}
 
- /* ai cards section from below  */
- .ai_cards {
-    text-align: center;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 90px;
-    background-color: #0d0d0d;
-    color: white;
-  }
-  
-  .ai_cards h1 {
-    font-size: 28px;
-    font-weight: bold;
-    color: white;
-  }
-  
-  .ai_cards p {
-    font-size: 16px;
-    margin: 15px auto;
-    width: 70%;
-    color: #ccc;
-  }
-  
+.ai_cards p {
+  font-size: 16px;
+  margin: 15px auto;
+  width: 70%;
+  color: #ccc;
+}
+
+.grid-container {
+  display: grid;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.ai-card {
+  background-color: #111;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.ai-card:hover {
+  background-color: #222;
+}
+
+.ai-card .icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.ai-card h3 {
+  font-size: 16px;
+  margin-top: 10px;
+  color: white;
+}
+
+/* Media Queries for responsiveness */
+
+/* Tablet screens */
+@media (max-width: 1024px) {
   .grid-container {
-    display: grid;
-    width: 90%;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    margin-top: 30px;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row on tablets */
   }
-  
-  .ai-card {
-    background-color: #111;
-    border: 1px solid #333;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    transition: all 0.3s ease-in-out;
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on mobile */
   }
-  
-  .ai-card:hover {
-    background-color: #222;
+}
+
+/* Extra Small Mobile screens */
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* 1 card per row on very small mobile screens */
   }
-  
-  .ai-card .icon {
-    font-size: 30px;
-    margin-bottom: 10px;
-    color: #fff;
-  }
-  
-  .ai-card h3 {
-    font-size: 16px;
-    margin-top: 10px;
-    color: white;
-  }
+}
