@@ -218,6 +218,7 @@ p {
   }
 
   .case_study_item {
+    justify-content: start;
     padding: 10px;
   }
 

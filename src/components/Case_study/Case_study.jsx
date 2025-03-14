@@ -22,15 +22,15 @@ const caseStudies = [
     statement: "Efficient production planning & inventory management",
 
     problem: {
-      heading: "Problem 2",
+      heading: "Problem",
       description: "EFG Ltd is into business of manufacturing automobile ancillary spare parts. The company did not maintain color-wise stock of assembly parts and had no record of color-wise production of parts. Production plan was made on the basis of finished goods required for sales, ignoring the stock available of assembly parts.",
     },
     solution: {
-      heading: "Solution 2",
+      heading: "Solution ",
       description: "Color-wise stock was recorded in the current ERP system post physical stock taking. Color-wise BOM (Bill of Material) masters were created in the system, enabling plant managers to monitor the closing stock of assembly parts and perform efficient production planning.",
     },
     results: {
-      heading: "Results 2",
+      heading: "Results ",
       description: "Reduced inventory levels of assembly parts were achieved by avoiding substantial variation in available stock across assembly parts required for each unit of finished product. This led to a reduction in annual inventory carrying cost of Rs. 5,00,000.",
     },
   },
@@ -38,15 +38,15 @@ const caseStudies = [
     statement: "Increase Sales without Increase in Cost",
 
     problem: {
-      heading: "Problem 3",
+      heading: "Problem ",
       description: "A home décor products & upholstery merchandise company was struggling with retail sales due to lack of product understanding among consumers.A catalogue was need of the hour, but production cost of a catalogue with fabric samples ranges from ₹600-4000.",
     },
     solution: {
-      heading: "Solution 3",
+      heading: "Solution ",
       description: "Our analysis helped in prioritising key demand areas of the catalog based on product-wise, region-wise analysis of sales data.The company realised higher demand for plain curtains in areas of tourist interest and embroidered curtains in high standard of living areas.",
     },
     results: {
-      heading: "Results 3",
+      heading: "Results ",
       description: "Net increase in sales across regions of ₹15,00,000 was achieved without any change in total cost involved in the preparation and distribution of product catalogues.",
     },
   },
@@ -54,15 +54,15 @@ const caseStudies = [
     statement: "Improvements in Operational Efficiencies",
 
     problem: {
-      heading: "Problem 4",
+      heading: "Problem ",
       description: "ABC Ltd, a manufacturer of plastic furniture, faced challenges in monitoring daily production activities at both the plant and head office level. The reliance on monthly Excel-based MIS, due to the absence of a dedicated production module, led to inefficiencies.Additionally, the MIS format failed to provide accurate insights into product cycle time and overall efficiency across the factory.",
     },
     solution: {
-      heading: "Solution 4",
+      heading: "Solution ",
       description: "To address these issues, the data collection process was revised to track material rejection during production and hourly production rates.Furthermore, interactive and visually intuitive dashboards were developed, enabling plant managers and executives to monitor real-time data, including cycle time, machine utilization, machine downtime, and production rejection analysis.",
     },
     results: {
-      heading: "Results 4",
+      heading: "Results ",
       description: "The implementation of these solutions enhanced monitoring capabilities, reducing product cycle time and improving machine utilization and production output.Additionally, production costs decreased due to better planning and optimized use of available machine hours.",
     },
   },
