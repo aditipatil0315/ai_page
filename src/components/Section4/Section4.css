@@ -51,7 +51,7 @@
     height: 90px;
     width: 90px;
     border-radius: 50%;
-    overflow: hidden; /* Ensures the image doesn't overflow */
+    overflow: hidden; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,7 +61,7 @@
   .img_person img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image covers the div properly */
+    object-fit: cover; 
     border-radius: 50%;
   }
 
@@ -152,22 +152,35 @@
 
 @media (max-width: 480px) {
     .our_team_section {
-        padding: 15px;
+      background-color: black;
+        padding: 15px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
-    .member {
-        padding: 30px 15px;
-    }
+  
 
     .img_person {
         height: 70px;
         width: 70px;
+        /* margin-bottom: 1rem; */
+        margin: 0;
+    }
+
+    .intro {
+      display: flex;
+      line-height:1;
+      justify-content: center;
+      align-items: center;
+      /* text-align: center; */
+      width: 100%;
+      /* background-color: #fff; */
     }
 
     .intro h2 {
       text-align: center;
-padding: 0;
-margin: 0;
         font-size: 16px;
     }
 
@@ -179,19 +192,31 @@ margin: 0;
 
     .about {
       text-align: center;
-
-        padding: 10px;
+        padding: 5px;
     }
 
     .about p {
         font-size: 12px;
     }
 
+    .member {
+      padding: 10px;
+      width: 90%;
+      padding: 0 15px;
+      text-align: left;
+      gap: 0;
+      margin-right: 0.7rem;
+
+
+  }
+
     .profile {
-      background-color: red;
+      /* background-color: red; */
       display: flex;
-      text-align: center;
-      justify-content: center;
-      align-items: center;
+      text-align: left;
+      padding-top: 1rem;
+      /* gap: 0; */
+      /* justify-content: center;
+      align-items: center; */
     }
 }
