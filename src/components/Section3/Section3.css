@@ -146,7 +146,10 @@
 
 @media (max-width: 480px) {
     .faq-container {
-        padding: 20px;
+      background-color: black;
+        padding: 30px;
+        margin-right: 1.5rem;
+
     }
 
     .faq-left, .faq-right {
@@ -155,12 +158,12 @@
 
     .faq-left h2 {
         font-size: 18px;
-        text-align: center;
+        text-align: left;
     }
 
     .faq-left p {
         font-size: 12px;
-        text-align: center;
+        text-align: left;
     }
 
     .faq-question {

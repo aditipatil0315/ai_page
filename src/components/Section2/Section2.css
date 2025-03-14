@@ -145,6 +145,11 @@
 
       }
 
+      .applications_card {
+        padding-right: 1.2rem;
+
+      }
+
       
       .scale_section h3 {
           font-size: 13px;
@@ -152,6 +157,7 @@
       }
   
       .applications_card h2 {
+        padding-bottom: 5px;
           text-align: left;
       }
   
