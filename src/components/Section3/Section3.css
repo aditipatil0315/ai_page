@@ -126,6 +126,8 @@
 
     .faq-left, .faq-right {
         padding: 25px;
+        width: 100%;
+
     }
 
     .faq-left h2 {
@@ -151,15 +153,17 @@
     .faq-container {
       background-color: black;
         padding: 30px;
+        margin-bottom: 20px;
 
     }
 
     .faq-left, .faq-right {
-        padding: 20px;
+        padding: 0px;
 
     }
 
     .faq-left h2 {
+      
         font-size: 18px;
         text-align: left;
     }
