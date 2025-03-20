@@ -25,7 +25,7 @@
   
   .scale_section h1 {
       line-height: 1;
-      font-size: 36px;
+      font-size: 30px;
       font-weight: 700;
       color: whitesmoke;
   }
@@ -53,7 +53,8 @@
   }
   
   .services_given {
-      background-color: #2E2E2E;
+      background-color: black;
+      border: 0.01rem solid #0074fe;
       display: flex;
       height: 150px;
       flex-direction: column;
