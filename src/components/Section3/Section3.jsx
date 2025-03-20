@@ -25,7 +25,7 @@ const toggleDropdown = (index) => {
     <div className="faq-container">
       {/* Left Side Text Section */}
       <div className="faq-left">
-        <h2>What Makes Our AI Services Ideal for You?</h2>
+        <h2>What Makes Our AI Services <span>Ideal for You?</span></h2>
         <p>
           As a premium AI services company, we provide tailored AI solutions designed for your business needs.
           Our expertise ensures custom AI solutions that are strategically developed to deliver exceptional results.
