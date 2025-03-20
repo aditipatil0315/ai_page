@@ -46,6 +46,12 @@
     width: 110%;
   }
 
+  .intro p {
+    color: #0074fe;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
   .img_person {
     background-color: grey;
     height: 90px;

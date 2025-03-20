@@ -69,7 +69,7 @@ const Section4 = () => {
     
             </div>
             <div className="about">
-              <p>Manthan designs and builds intelligent AI solutions and Ai agents. He empowers businesses to reclaim valuable time by automating repetitive tasks, optimizing processes, reducing overhead, and accelerating growth.</p>
+              <p>Manthan designs and builds intelligent AI solutions and AI agents. He empowers businesses to reclaim valuable time by automating repetitive tasks, optimizing processes, reducing overhead, and accelerating growth.</p>
             </div>
     
             
