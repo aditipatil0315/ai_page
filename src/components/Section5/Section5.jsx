@@ -32,7 +32,7 @@ const ai_cardData = [
 const Section5 = () => {
   return (
     <div className="ai_cards">
-      <h1>Industries We Empower and Transform with Our AI Services</h1>
+      <h1><span>Industries We Empower </span>and Transform with Our AI Services</h1>
       <p>
         Our AI services redefine businesses across industries by driving innovation, improving efficiency, and unlocking new growth opportunities. From healthcare, finance, retail, and real estate to travel and hospitality, we empower businesses to stay ahead of the competition with cutting-edge AI business solutions tailored to their unique needs.
       </p>
