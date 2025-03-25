@@ -9,6 +9,7 @@ import Section3 from './components/Section3/Section3'
 import Section4 from './components/Section4/Section4'
 import Section5 from './components/Section5/Section5'
 import Section6 from './components/Section6/Section6'
+import Section7 from './components/Section7/Section7'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <Section1/>
         <Section2/>
         <Section3/>
+        <Section7/>
         <Section4/>
         <Section5/>
         <Case_study/>

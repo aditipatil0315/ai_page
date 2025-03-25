@@ -6,7 +6,7 @@ const Section2 = () => {
     <div className="section2-wrapper">
       <div className="scale_section">
         <h1><span>Scale Smarter</span> with our Site of Artificial Intelligence Services and Solutions.</h1>
-        <h3>Explore our comprehensive suite of AI services designed to drive profitable innovations and deliver tangible outcomes. From consulting to development and beyond, our extensive artificial intelligence services and solutions are tailored to meet unique business needs in any industry.</h3>
+        <h3>AI-driven automation is the future. At <span><b>Step AI</b></span>, we build intelligent solutions that streamline operations, enhance decision-making, and boost revenue. Transform your business with cutting-edge AI technology today.</h3>
 
         <br />
         <div className="applications_card">

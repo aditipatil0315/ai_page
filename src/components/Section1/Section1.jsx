@@ -17,7 +17,7 @@ const Section1 = () => {
           Unlock new potential and upgrade existing business capabilities with AI services that streamline operations, <br />
           elevate customer experience, and drive innovation.
         </h3>
-        <button className='cta_ai'>AI CTA</button>
+        <button className='cta_ai'>Get Started</button>
 
         <div className="clients-section">
           <h2>Trusted by</h2>

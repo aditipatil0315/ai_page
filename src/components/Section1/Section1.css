@@ -51,20 +51,78 @@
 }
 
 
+
+
 .cta_ai {
     padding: 12px 24px;
     height: 45px;
-    width: 100px;
-    font-size: 12px;
+    width: 150px;
+    font-size: 14px;
     font-weight: 400;
     color: white;
     background-color: black;
-    border: 1px solid white;
+    border: 2px solid transparent;
     border-radius: 12px;
     cursor: pointer;
-    transition: 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
     text-align: center;
+    position: relative;
+    z-index: 1;
+    animation: borderBlink 1.5s infinite alternate ease-in-out;
 }
+
+
+.cta_ai::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    background: linear-gradient(45deg, #4f46e5, #3b82f6, #9b00ff, #4f46e5);
+    background-size: 300% 300%;
+    border-radius: 12px;
+    animation: borderPulse 2s ease infinite, borderBlink 1.5s infinite alternate ease-in-out;
+    opacity: 0.8;
+}
+
+@keyframes borderBlink {
+    0% {
+        box-shadow: 0 0 5px #0074FE;
+    }
+    50% {
+        box-shadow: 0 0 7px #9b00ff;
+    }
+    100% {
+        box-shadow: 0 0 9px #0074FE;
+    }
+}
+
+
+@keyframes borderPulse {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Button Hover Effect */
+.cta_ai:hover {
+    transform: scale(1.05);
+    background-color: rgba(0, 116, 254, 0.1);
+}
+
+.cta_ai:hover::before {
+    opacity: 1;
+    animation: borderPulse 1s ease infinite, borderBlink 1s infinite alternate ease-in-out;
+}
+
 
 
 .clients-grid {
@@ -178,9 +236,9 @@ width: 100%;
     }
 
     .cta_ai {
-        width: 100px;
-        height: 36px;
-        font-size: 12px;
+        width: 150px;
+        height: 42px;
+        font-size: 14px;
     }
 
     .clients-grid {

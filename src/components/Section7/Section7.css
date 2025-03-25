@@ -1,0 +1,165 @@
+.section7 {
+    background-color: #0d0d0d;
+    color: white;
+    width: 100%;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section7-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.section7-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.section7-title span {
+    color: #0074FE;
+}
+
+.solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.solution-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.solution-card:hover {
+    transform: translateY(-5px);
+}
+
+.solution-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #0074FE;
+}
+
+.solution-card p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.section7-cta {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.section7-cta span {
+    color: #0074FE;
+    font-weight: bold;
+}
+
+.button_sec7 {
+    padding: 12px 24px;
+    height: 45px;
+    width: 150px;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    background-color: black; /* Keep background black */
+    border: 2px solid transparent;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Animated Border */
+.button_sec7::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    background: linear-gradient(45deg, #4f46e5, #3b82f6, #9b00ff, #4f46e5);
+    background-size: 300% 300%;
+    border-radius: 12px;
+    animation: borderPulse 2s ease infinite, borderBlink 1.5s infinite alternate ease-in-out;
+    opacity: 0.8;
+}
+
+/* Border Color Blinking Animation */
+@keyframes borderBlink {
+    0% {
+        border-color: #0074FE; /* Blue */
+    }
+    50% {
+        border-color: #9b00ff; /* Purple */
+    }
+    100% {
+        border-color: #0074FE; /* Blue */
+    }
+}
+
+/* Gradient Pulse Animation */
+@keyframes borderPulse {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Hover Effect */
+.button_sec7:hover {
+    transform: scale(1.05);
+}
+
+.button_sec7:hover::before {
+    opacity: 1;
+    animation: borderPulse 1s ease infinite, borderBlink 1s infinite alternate ease-in-out;
+}
+
+
+
+
+
+@media (max-width: 900px) {
+    .solutions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .solutions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section7-title {
+        font-size: 1.5rem;
+    }
+
+    .solution-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .solution-card p {
+        font-size: 0.95rem;
+    }
+
+    .section7-cta {
+        font-size: 1rem;
+    }
+}
