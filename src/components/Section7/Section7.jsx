@@ -29,6 +29,7 @@ const Section7 = () => {
         <p className="section7-cta">
           Join <span>100+ businesses</span> already leveraging <strong>Step AI</strong> for growth and efficiency.
         </p>
+        <br />
         <button className="button_sec7">Get Started</button>
 
       </div>
